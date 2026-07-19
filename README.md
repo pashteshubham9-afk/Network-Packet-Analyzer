@@ -214,7 +214,7 @@ Cybersecurity & Python Enthusiast
 
 ### GitHub
 
-https://github.com/pashteshubham9-afk
+https://github.com/pashteshubham9-afk/Network-Packet-Analyzer.git
 
 ### LinkedIn
 
