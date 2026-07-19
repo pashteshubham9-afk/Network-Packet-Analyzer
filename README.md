@@ -294,9 +294,9 @@ This project is licensed under the **MIT License**.
 
 ## Shubham Sudhakar Pashte
 
-Diploma in Information Technology Student
+Diploma in Computer Science & Engineering Student
 
-Cybersecurity Enthusiast | Python Learner
+Cybersecurity Enthusiast | Python Learner 
 
 ### GitHub
 
