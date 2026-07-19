@@ -2,7 +2,7 @@
 
 A Python-based **Network Packet Analyzer** developed using **Python** and **Scapy**. This project captures live network packets and displays essential information such as **Source IP**, **Destination IP**, **Protocol**, **Packet Length**, and **Packet Summary** in real time.
 
-It is designed as a beginner-friendly cybersecurity project to help understand how network communication works and how packet sniffing can be performed ethically.
+It is designed as a beginner-friendly cybersecurity project to help students and networking enthusiasts understand how network communication works and how packet sniffing can be performed ethically.
 
 ---
 
@@ -33,6 +33,7 @@ This project was developed as part of the **CodSoft Cyber Security Internship** 
 - Scapy
 - VS Code
 - Windows
+- Npcap
 - Networking Fundamentals
 
 ---
@@ -40,15 +41,15 @@ This project was developed as part of the **CodSoft Cyber Security Internship** 
 # 📂 Project Structure
 
 ```text
-network-packet-analyzer/
+Network-Packet-Analyzer/
 │
 ├── packet_analyzer.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 ├── screenshots/
 │   ├── output1.png
 │   └── output2.png
-└── LICENSE
 ```
 
 ---
@@ -57,27 +58,60 @@ network-packet-analyzer/
 
 - Python 3.x
 - Scapy
-- Npcap (Required on Windows)
+- Npcap
+- Windows 10/11
 - Administrator Privileges
-- VS Code (Optional)
+- VS Code (Recommended)
 
 ---
 
-# ⚙ Installation
+# 💻 Windows Setup Guide
 
-## 1. Clone the Repository
+## Step 1: Install Python
 
-```bash
-git clone https://github.com/pashteshubham9-afk/network-packet-analyzer.git
+Download Python from:
+
+https://www.python.org/downloads/
+
+✔ During installation, enable:
+
+```
+Add Python to PATH
 ```
 
-## 2. Navigate to the Project Folder
+---
 
-```bash
-cd network-packet-analyzer
+## Step 2: Install Npcap
+
+Download Npcap from:
+
+https://npcap.com/
+
+✔ During installation enable:
+
+```
+Install Npcap in WinPcap API-compatible Mode
 ```
 
-## 3. Install Dependencies
+---
+
+## Step 3: Clone the Repository
+
+```bash
+git clone https://github.com/pashteshubham9-afk/Network-Packet-Analyzer.git
+```
+
+---
+
+## Step 4: Open the Project Folder
+
+```bash
+cd Network-Packet-Analyzer
+```
+
+---
+
+## Step 5: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -91,9 +125,21 @@ pip install scapy
 
 ---
 
-# ▶ Running the Project
+## Step 6: Verify Installation
 
-Run the program with Administrator privileges.
+```bash
+python --version
+```
+
+```bash
+pip show scapy
+```
+
+---
+
+## Step 7: Run the Project
+
+Open **Command Prompt** or **PowerShell** as Administrator.
 
 ```bash
 python packet_analyzer.py
@@ -121,7 +167,7 @@ IP / TCP 192.168.29.15:51234 > 142.250.183.78:https
 
 # 📷 Screenshots
 
-Store your output screenshots inside the **screenshots** folder.
+Save your screenshots inside the **screenshots** folder.
 
 ```text
 screenshots/
@@ -129,7 +175,7 @@ screenshots/
 └── output2.png
 ```
 
-Display them in the README using:
+Display them in README:
 
 ```md
 ## Screenshots
@@ -146,7 +192,7 @@ Display them in the README using:
 1. Starts packet sniffing using Scapy.
 2. Listens for live network traffic.
 3. Captures incoming and outgoing packets.
-4. Extracts Source and Destination IP addresses.
+4. Extracts Source IP and Destination IP.
 5. Identifies the packet protocol.
 6. Calculates packet length.
 7. Displays packet information in real time.
@@ -162,8 +208,46 @@ Display them in the README using:
 - ICMP
 - Network Interfaces
 - Packet Parsing
-- Scapy Library
+- Scapy
 - Cybersecurity Fundamentals
+
+---
+
+# ❓ Troubleshooting
+
+## ModuleNotFoundError: No module named 'scapy'
+
+Install Scapy:
+
+```bash
+pip install scapy
+```
+
+---
+
+## Permission Error
+
+Run Command Prompt or PowerShell as **Administrator**.
+
+---
+
+## No Packets Captured
+
+- Make sure Npcap is installed.
+- Check your internet connection.
+- Run the program with Administrator privileges.
+
+---
+
+## Python Not Found
+
+Verify Python installation:
+
+```bash
+python --version
+```
+
+If Python is not recognized, reinstall Python and enable **Add Python to PATH**.
 
 ---
 
@@ -171,24 +255,26 @@ Display them in the README using:
 
 - GUI using Tkinter
 - Save packets as PCAP files
-- Export captured data to CSV
+- Export captured packets to CSV
 - Advanced packet filtering
-- DNS packet analysis
-- HTTP/HTTPS packet inspection
-- Live traffic statistics
-- Network traffic visualization dashboard
+- DNS Packet Analysis
+- HTTP/HTTPS Packet Inspection
+- Live Network Statistics
+- Network Traffic Visualization Dashboard
 
 ---
 
 # ⚠ Disclaimer
 
-This project is intended **only for educational and ethical purposes**. Use it only on networks that you own or have explicit permission to monitor.
+This project is developed **only for educational and ethical purposes**.
+
+Please use it **only on networks that you own or have explicit permission to monitor.**
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
 1. Fork the repository.
 2. Create a new branch.
@@ -206,9 +292,10 @@ This project is licensed under the **MIT License**.
 
 # 👨‍💻 Author
 
-**Shubham Sudhakar Pashte**
+## Shubham Sudhakar Pashte
 
-Diploma in Information Technology Student  
+Diploma in Information Technology Student
+
 Cybersecurity Enthusiast | Python Learner
 
 ### GitHub
@@ -217,7 +304,7 @@ https://github.com/pashteshubham9-afk
 
 ### Repository
 
-https://github.com/pashteshubham9-afk/network-packet-analyzer
+https://github.com/pashteshubham9-afk/Network-Packet-Analyzer
 
 ### LinkedIn
 
@@ -227,4 +314,6 @@ https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/
 
 # ⭐ Support
 
-If you found this project useful, please consider giving it a ⭐ on GitHub. Your support is greatly appreciated!
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+Your support motivates me to build more open-source cybersecurity projects.
